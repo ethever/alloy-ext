@@ -4,6 +4,6 @@ pub use read_write_provider::ReadWriteProvider;
 pub use transports::MultiTransport;
 
 mod check_revert;
-mod fallback;
+pub mod fallback;
 mod read_write_provider;
 mod transports;
