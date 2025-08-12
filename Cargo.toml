@@ -7,10 +7,13 @@ edition = "2024"
 alloy          = { version = "^1.0", features = ["full"] }
 alloy-json-rpc = "^1.0"
 async-trait    = "^0.1"
+derive_more    = "^2.0"
 eyre           = "^0.6"
 futures        = "^0.3"
 itertools      = "^0.14"
+parking_lot    = "0.12.4"
 rand           = "^0.9"
+tap            = "^1.0"
 thiserror      = "^2.0"
 tower          = { version = "^0.5", features = ["full"] }
 tracing        = "^0.1"
