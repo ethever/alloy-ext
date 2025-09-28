@@ -1,8 +1,8 @@
 use {
-    alloy::{
-        network::Network,
-        providers::{PendingTransactionBuilder, Provider, RootProvider, WalletProvider},
-        transports::TransportResult,
+    alloy_network::Network,
+    alloy_provider::{
+        PendingTransactionBuilder, Provider, RootProvider, WalletProvider,
+        transport::TransportResult,
     },
     std::marker::PhantomData,
 };

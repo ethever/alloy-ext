@@ -4,16 +4,28 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-alloy          = { version = "^1.0", features = ["full"] }
+# alloy          = { version = "^1.0", features = ["full"] }
+alloy-provider = { version = "1.0", default-features = false, features = [
+    "reqwest",
+    "reqwest-rustls-tls",
+] }
+alloy-network = "^1.0"
 alloy-json-rpc = "^1.0"
-async-trait    = "^0.1"
-derive_more    = "^2.0"
-eyre           = "^0.6"
-futures        = "^0.3"
-itertools      = "^0.14"
-parking_lot    = "0.12.4"
-rand           = "^0.9"
-tap            = "^1.0"
-thiserror      = "^2.0"
-tower          = { version = "^0.5", features = ["full"] }
-tracing        = "^0.1"
+# alloy-transport = { version = "^1.0", features = ["http"] }
+alloy-transport-http = { version = "^1.0", features = [
+    "reqwest",
+    "reqwest-rustls-tls",
+], default-features = false }
+
+async-trait = "^0.1"
+derive_more = "^2.0"
+eyre        = "^0.6"
+futures     = "^0.3"
+itertools   = "^0.14"
+parking_lot = "0.12.4"
+rand        = "^0.9"
+tap         = "^1.0"
+thiserror   = "^2.0"
+tower       = { version = "^0.5", features = ["full"] }
+tracing     = "^0.1"
+alloy-transport = "1.0.36"

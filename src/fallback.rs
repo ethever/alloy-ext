@@ -1,5 +1,6 @@
-use alloy::transports::{TransportError, TransportErrorKind, TransportFut};
 use alloy_json_rpc::{RequestPacket, ResponsePacket};
+use alloy_provider::transport::{TransportError, TransportFut};
+use alloy_transport::TransportErrorKind;
 use core::time::Duration;
 use derive_more::{Deref, DerefMut};
 use futures::StreamExt;

@@ -1,3 +1,5 @@
+use alloy_provider::transport::TransportError;
+use alloy_transport_http::{Client, Http};
 use eyre::eyre;
 use futures::{FutureExt, TryFutureExt, future::select_ok};
 use rand::{prelude::IndexedRandom, rng};
@@ -6,10 +8,10 @@ use std::{
     task::{Context, Poll},
 };
 use {
-    alloy::transports::{
-        TransportError,
-        http::{Client, Http},
-    },
+    // alloy::transports::{
+    //     TransportError,
+    //     http::{Client, Http},
+    // },
     alloy_json_rpc::{RequestPacket, ResponsePacket},
     tower::Service,
 };

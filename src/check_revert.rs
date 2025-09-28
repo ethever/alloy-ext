@@ -1,4 +1,4 @@
-use alloy::network::ReceiptResponse;
+use alloy_network::ReceiptResponse;
 
 #[derive(thiserror::Error, Debug, Clone)]
 pub enum ReceiptExtError<R>
