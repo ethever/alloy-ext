@@ -1,9 +1,7 @@
 use {
     alloy_network::Network,
-    alloy_provider::{
-        PendingTransactionBuilder, Provider, RootProvider, WalletProvider,
-        transport::TransportResult,
-    },
+    alloy_provider::{PendingTransactionBuilder, Provider, RootProvider, WalletProvider},
+    alloy_transport::TransportResult,
     std::marker::PhantomData,
 };
 
