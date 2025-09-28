@@ -16,6 +16,7 @@ alloy-transport-http = { version = "^1.0", features = [
     "reqwest",
     "reqwest-rustls-tls",
 ], default-features = false }
+alloy-transport = "^1.0"
 
 async-trait = "^0.1"
 derive_more = "^2.0"
@@ -28,4 +29,3 @@ tap         = "^1.0"
 thiserror   = "^2.0"
 tower       = { version = "^0.5", features = ["full"] }
 tracing     = "^0.1"
-alloy-transport = "1.0.36"
